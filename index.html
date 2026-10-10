@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="app-container">
+    <div id="start-screen" class="screen">
+        <h1 class="title">Квіз по Правилам безпеки</h1>
+        <button class="start-btn">Почати</button>
+    </div>
+    <div id="quiz-screen" class="screen hide">
+      <div class="header">
+        <span id="timer">Час: 5c</span>
+        <span id="score">Бали: 0</span>
+        <h2 id="question"></h2>
+        <div id="answers-container"></div>
+      </div>
+    </div>
+    <div id="result-screen" class="screen hide">
+        <p id="result"></p>
+        <button class="start-btn">Спробувати знову</button>
+    </div>
+</div>
+</body>
+</html>
